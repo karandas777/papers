@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@font-face{
+  font-family: varsity;
+  src: url(./assets/varsity.ttf);
+}
 
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  user-select: none;
 }
 
 .heading{
-  font-family: 'Francois One', sans-serif;
+  font-family: varsity;
 }

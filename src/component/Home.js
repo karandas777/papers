@@ -12,6 +12,7 @@ export default class Home extends Component {
     }
 
     componentDidMount(){
+        window.scrollTo(0,0);
         this.funGetAllWalls();
     }
 
@@ -35,6 +36,14 @@ export default class Home extends Component {
         return (
             <div className="container my-4 py-5 pt-3 px-1">
                 <div className="my-4 text-center">New wallpapers <span className="text-primary">every hour!</span></div>
+                {
+                    this.state.wallList.length === 0  ? (
+                        <div className="my-3 text-center">
+                        <img src={require('../assets/loader.gif')} className="col-6 w-100" alt="loading" />
+                    </div>
+                    ) : null
+                }
+
                 <div className="row m-0 p-0">
                     {
                         this.state.wallList && this.state.wallList.map((wall)=>(
