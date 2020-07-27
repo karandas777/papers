@@ -13,3 +13,7 @@ body {
 .heading{
   font-family: varsity;
 }
+
+.wallHolder{
+  min-height: 100vh;
+}

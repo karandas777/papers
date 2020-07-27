@@ -34,8 +34,8 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div className="container my-4 py-5 pt-3 px-1">
-                <div className="my-4 text-center">New wallpapers <span className="text-primary">every hour!</span></div>
+            <div className="container pb-5 pt-3 px-1 wallHolder">
+                <div className="mb-3 text-center">New wallpapers <span className="text-primary">every hour!</span></div>
                 {
                     this.state.wallList.length === 0  ? (
                         <div className="my-3 text-center">
@@ -48,8 +48,8 @@ export default class Home extends Component {
                     {
                         this.state.wallList && this.state.wallList.map((wall)=>(
                             <div className="col-3 m-0 p-1" key={wall.id}>
-                                <a href={wall.image} download data-toggle="tooltip" data-placement="top" title={wall.title}>
-                                <img src={wall.image} className="w-100 img-fluid rounded shadow-sm" alt={wall.title} />
+                                <a href={wall.image} download data-toggle="tooltip" data-placement="top" title="Click to download!">
+                                <img src={wall.image} className="w-100 h-100 img-fluid rounded shadow-sm" alt={wall.title} />
                                 </a>
                             </div>
                         ))
