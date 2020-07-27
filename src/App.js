@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './component/Header';
 import Home from './component/Home';
-import Insert from './component/Insert';
+// import Insert from './component/Insert';
 
 
 function App() {
